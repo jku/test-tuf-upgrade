@@ -1,0 +1,66 @@
+{
+ "signatures": [
+  {
+   "keyid": "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81",
+   "sig": "30450221008220227916ff79d1ccf278153b9f07c86d9eed73b550e729e1f8bada2ba2942d022038b4ecfeaad27af4dbb71dbab81afc0fcea23ff9972ba0d3f3a2fb172b75128e"
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2025-12-05T09:59:38Z",
+  "keys": {
+   "22878e6045e467ce2df2195de30eaa53e521d7250dbf9b361688262b27de3fda": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/jku/test-tuf-upgrade/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   },
+   "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEohqIdE+yTl4OxpX8ZxNUPrg3SL9H\nBDnhZuceKkxy2oMhUOxhWweZeG3bfM1T4ZLnJimC6CAYVU5+F5jZCoftRw==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-keyowner": "@jku"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "22878e6045e467ce2df2195de30eaa53e521d7250dbf9b361688262b27de3fda"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "22878e6045e467ce2df2195de30eaa53e521d7250dbf9b361688262b27de3fda"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
